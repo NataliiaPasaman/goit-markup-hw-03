@@ -1,0 +1,209 @@
+:root
+{--main-text-color: #757575;
+--accent-color: #2196F3;
+--title-color: #212121;
+--bcg-color: #FFFFFF;
+--let-spc: 0.03em;
+}
+
+body {
+    color: var(--main-text-color);
+    background-color: var(--bcg-color);
+    font-family: 'Roboto', sans-serif, 'Raleway';
+}
+.item {
+    list-style: none;
+}
+/* Логотип*/
+.logo {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    text-align: left;
+    letter-spacing: var(--let-spc);
+}
+.logo-nav-word {
+    color: #000000;
+}
+.logo-word {
+    color: var(--bcg-color);
+}
+.logo:hover, 
+.logo:focus {
+    text-decoration: underline;
+}
+
+/* Хедер*/
+.link-navigation {
+    text-decoration: none;
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: left;
+    letter-spacing: 0.02em;
+}
+.link-navigation:hover,
+.link-navigation:focus {
+    color: var(--accent-color);
+}    
+.link-contacts {
+    color: var(--main-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: left;
+    letter-spacing: 0.02em;
+}
+.link-contacts:hover,
+.link-contacts:focus {
+    color: var(--accent-color);
+}
+
+/*Секція Герой*/
+.hero {
+    background-color: #2F303A;
+    color: var(--bcg-color);
+}
+.title-hero {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+.btn-hero {
+    color: var(--bcg-color);
+    background-color: var(--accent-color);
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Секція Переваги */
+.section-title {
+    visibility: hidden;
+}
+.title-benefits {
+    color: var(--title-color);
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: left;
+    letter-spacing: var(--let-spc);
+}
+.text-benefits{
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left;
+    letter-spacing: var(--let-spc);
+}
+
+/* Секція робіт і секція команда */
+.team {
+    background-color: #F5F4FA;
+}
+.title {
+    color: var(--title-color);
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: var(--let-spc);
+}
+.team-title {
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: var(--let-spc);
+}
+.position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: var(--let-spc);
+}
+.our-team {
+    background-color: var(--bcg-color);
+}
+/* Футер */
+footer {
+    background-color: #2F303A;
+}
+.location {
+    color: var(--bcg-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left;
+    letter-spacing: var(--let-spc);
+}
+.footer-address > .link-contacts {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left;
+    letter-spacing: var(--let-spc);
+}
+/* СТОРІНКА ПОРТФОЛІО 
+Фільтр Галереї - кнопки*/
+.current {
+    color: var(--accent-color);
+}
+
+.btn-filter {
+    color: var(--title-color);
+    background-color: #F5F4FA;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: var(--let-spc);
+}
+.btn-filter:hover,
+.btn-filter:focus {
+    color: var(--bcg-color);
+    background-color: var(--accent-color);
+}
+.btn-active {
+    color: var(--bcg-color);
+    background-color: var(--accent-color);
+}
+/* Карточки робіт Портфоліо */
+.title-portfolio {
+    visibility: hidden;
+}
+.link {
+    text-decoration: none;
+}
+.title-work {
+    color: var(--title-color);
+    font-size: 18px;
+    line-height: 2;
+    text-align: left;
+    letter-spacing: 0.06em;
+}
+.title-work:hover,
+.title-work:focus {
+    color: var(--accent-color);
+}
+.work-card {
+    color: var(--main-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: left;
+    letter-spacing: var(--let-spc);
+}
