@@ -15,9 +15,16 @@ body {
 h1, h2, h3, p {
     margin: 0;
 }
+
 ul {
     padding: 0;
     margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .item {
@@ -177,16 +184,13 @@ ul {
     padding: 94px 0;
 }
 
-.section-title {
-    visibility: hidden;
-}
-
 .list-benefits {
     display: flex;
     align-items: center;
 }
 
 .item-benefits {
+    width: calc((100%-3*30)/4);
     margin-right: 30px;
 }
 
@@ -395,9 +399,18 @@ ul {
 
 /* Карточки робіт Портфоліо */
 
-.title-portfolio {
-    visibility: hidden;
-}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 .list-portfolio {
     display: flex;
@@ -422,11 +435,12 @@ ul {
     text-decoration: none;
 }
 
+.card-description {
+    padding: 20px 24px;
+}
+
 .title-project {
-    margin-top: 20px;
-    margin-right: 24px;
     margin-bottom: 4px;
-    margin-left: 24px;
 
     color: var(--title-color);
     font-size: 18px;
@@ -434,15 +448,12 @@ ul {
     text-align: left;
     letter-spacing: 0.06em;
 }
+
 .title-project:hover,
 .title-project:focus {
     color: var(--accent-color);
 }
 .work-card {
-    margin-right: 24px;
-    margin-left: 24px;
-    margin-bottom: 20px;
-
     color: var(--main-text-color);
     font-size: 16px;
     line-height: 1.88;
